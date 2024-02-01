@@ -54,7 +54,7 @@ data:
 
   # Set OP_DEBUG to 1 to enable debug level logging, which can be useful during troubleshooting. If not set, or set to
   # 0, info level logging is enabled.
-  # OP_DEBUG: "1"
+  OP_DEBUG: "1"
 
   # Set OP_TRACE to 1 to enable trace level logging, primarily used to debug Let's Encrypt integration errors. If not
   # set, or set to 0, trace level logging is suppressed. If set to 1, OP_DEBUG is ignored.

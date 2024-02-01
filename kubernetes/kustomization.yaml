@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: infra-1password-scim
+
+commonLabels:
+  app.kubernetes.io/name: 1password-scim
+
+resources:
+- secret-scimsession.yaml
+- secret-workspace-settings.yaml
+- secret-workspace-creds.yaml
+- ingress.yaml
+- tls-cert.yaml
+- op-scim-config.yaml
+- op-scim-deployment.yaml
+- op-scim-service.yaml
+- redis-config.yaml
+- redis-deployment.yaml
+- redis-service.yaml

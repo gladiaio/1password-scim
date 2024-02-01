@@ -1,0 +1,17 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: 1password-scim
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`1pscim-bridge.gladia.io`)
+      kind: Rule
+      services:
+        - name: op-scim-bridge
+          port: 80
+          kind: Service
+  tls:
+    secretName: op-scim-tls

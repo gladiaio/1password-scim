@@ -1,0 +1,1 @@
+We rely on the kubernetes deployment example, with some customization to handle the ingress.
